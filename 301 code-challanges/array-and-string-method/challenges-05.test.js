@@ -77,11 +77,17 @@ const gruffaloCrumble = {
 };
 
 
-const listFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
-  return result;
-};
+// const listFoods = (recipe) => {
+//   const result = [];
+//   // Solution code here...
+//   for (let i = 0; i < recipe.ingredients.length; i++) {
+//     let ingredient = recipe.ingredients[i].split(' ');
+//     let foodArray = ingredient.slice(2);
+//     result.push(foodArray.join(' '));
+//   }
+//   return result;
+// };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -92,11 +98,15 @@ You may also use other string or array methods.
 ------------------------------------------------------------------------------------------------ */
 
 const splitFoods = (recipe) => {
-  let result = [];
+  const result = [];
   // Solution code here...
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    let ingredient = recipe.ingredients[i].split(' ');
+    let foodArray = ingredient.slice(2);
+    result.push(foodArray.join(' '));
+  }
   return result;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -110,7 +120,13 @@ Return a new array containing just the verbs. For example, ['Mix until evenly di
 const stepActions = (recipe) => {
   let result = [];
   // Solution code here...
+  for (let i = 0; i < recipe.steps.length; i++) {
+    let steps = recipe.steps[i].split(' ');
+    let foodArray = steps.slice(0,1);
+    result.push(foodArray.join(' '));
+  }
   return result;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -128,6 +144,13 @@ For example:
 
 const removeEvenValues = (arr) => {
   // Solution code here...
+  for (let i = 0; i < arr.length; i++){
+
+    while (arr[i] % 2 === 0) {
+      arr.splice(i, 1);
+    }
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -147,6 +170,20 @@ removeLastCharacters('Gregor', 9) returns ''
 
 const removeLastCharacters = (str, numberOfCharacters) => {
   // Solution code here...
+  let newStr = []
+  if (numberOfCharacters.length < str.length){
+    for (let i=0; i<numberOfCharacters.length; i++)
+      return newStr.push(str.slice([i]));
+  }
+
+  else if (numberOfCharacters.length > str.length) {
+
+
+    return newStr;
+  }
+  else if (numberOfCharacters.length < 0){
+    return newStr.push(str);
+  }
 };
 
 
@@ -187,8 +224,13 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 
 const extractVowels = (str) => {
   // Solution code here...
-};
+  let nonVowels = [];
+  for(let i=0; i<str.length; i++);{
+    let index = str.indexof('a','e','i','o','u')
+    return nonVowels.push(index.splice());
+  }
 
+};
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
