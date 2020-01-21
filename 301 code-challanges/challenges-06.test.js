@@ -13,7 +13,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 };
 const getCourseKeys = (obj) => {
   // Solution code here...
-  // console.log(Object.keys(courseInfo));
+  console.log(Object.keys(obj));
   return Object.keys(obj);
 
 };
@@ -95,8 +95,16 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  for (let i=0; i<arr.length; i++){
+    console.log()
+    if (arr[i].name === character) {
+      return true;
+    }
+    else if (!arr[i].name === character) {
 
-};
+      return false;
+    }
+  }};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -122,7 +130,7 @@ const totalCharacters = (arr) => {
     Object.values(arr[i]);
     console.log(arr[i])
   }
-    
+
   // return arr[i];
 
 };
