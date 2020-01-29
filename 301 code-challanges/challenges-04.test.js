@@ -42,7 +42,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 const citiesAtoJ = (arr) => {
   // Solution code here...
   let newCity = [];
-  return newCity.push(arr.match(/[A-J]\w+/gm)) || [];
+  return newCity.push(arr.match(/^[A-J]\w+/gm)) || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 
 const noPunctuation = str => {
   // Solution code here...
-  let wordWhite = /(\w*\s)/gm;
+  let wordWhite = /(\w+\s+)/gm;
   return str.match(wordWhite);
 };
 
