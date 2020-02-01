@@ -89,6 +89,9 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+
+  return str.split('').reduce ((acc, val)=> val + acc, '');
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -142,6 +145,7 @@ const characters = [
 
 const countNumberOfChildren = (arr) => {
   // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -154,6 +158,7 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 
 const calculateAverage = (arr) => {
   // Solution code here...
+  return arr.reduce((acc, val) => acc + val, 0)/ arr.length;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -175,6 +180,15 @@ const isPrime = (value) => {
 
 const countPrimeNumbers = (arr) => {
   // Solution code here...
+  return arr.reduce((acc, val)=>{
+    if (val % acc === 0)
+    {
+      return val + 1;
+    }
+    console.log(val);
+
+  },0)
+
 };
 
 /* ------------------------------------------------------------------------------------------------
