@@ -13,6 +13,16 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
+  let count = 0;
+  input.forEach(array => {
+    // console.log(array);
+    array.forEach(element => {
+      if (target === element) {
+        count++;
+      }
+    });
+  });
+  return count;
 
 };
 
@@ -133,11 +143,16 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
-  let filteredNames = data.filter(obj => (obj)).map(element =>(element.height)).reduce((a, b) =>{
-    return a.length <= b.length ? a : b;
-  
-  })
+  let shortestPerson = [];
+  let filteredNames = data.map(element =>(element.height)).reduce((a, b) => (a.length<= b.length ? a : b)
+  );
+  // let shortestPerson = filteredNames.forEach(element => {
+  //   console.log(element)
+  // });
+  shortestPerson.push(filteredNames)
+  console.log(shortestPerson)
   return filteredNames;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
