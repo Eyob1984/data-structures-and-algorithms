@@ -143,17 +143,19 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
-  let shortestPerson = [];
-  let filteredNames = data.map(element =>(element.height)).reduce((a, b) => (a.length<= b.length ? a : b)
-  );
-  // let shortestPerson = filteredNames.forEach(element => {
-  //   console.log(element)
-  // });
-  shortestPerson.push(filteredNames)
-  console.log(shortestPerson)
-  return filteredNames;
-  
-};
+
+  return data.reduce((acc, curr) => {
+    if (acc.height > curr.height){
+      console.log (acc)
+      return acc;
+      
+    }
+    else (acc.height < curr.height)
+    console.log(curr)
+    return curr;
+
+  },[])
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
