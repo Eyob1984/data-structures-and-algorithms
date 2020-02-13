@@ -173,7 +173,7 @@ const removeLastCharacters = (str, numberOfCharacters) => {
 
   if (numberOfCharacters.length < str.length){
 
-      return str.push(str.slice([i]));
+    return str.push(str.slice([i]));
   }
 
   else if (numberOfCharacters.length < 0) {
