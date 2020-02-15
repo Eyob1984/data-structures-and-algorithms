@@ -36,7 +36,7 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -49,6 +49,15 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+  let even = [];
+  let odd = [];
+  for (let i = 0; i < str.length; i++) {
+    i % 2 !== 0
+      ? odd.push(str[i])
+      : even.push(str[i])
+  }
+
+  return odd.join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -59,6 +68,24 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
+  for (let i = 0; i < arr.length; i++){
+    if(arr === arr[i].includes(':)')){
+      return true;
+    }
+    else(arr !== arr[i].includes(':)'))
+    return false;
+
+  }
+  // return arr.map(element => {
+  //   if(arr === element.includes(':)')){
+  //     console.log(element)
+  //     return false;
+  //   }
+  //   else{
+  //     return true;
+  //   }
+
+  // })
 };
 
 /* ------------------------------------------------------------------------------------------------
