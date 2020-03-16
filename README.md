@@ -37,5 +37,16 @@
 
 ### 401 Code Challanges
 #### Code Challanges 01
-[arrayReverse](./code-challanges/arrayReverse/array-reverse.js)   
+[arrayReverse](./code-challanges/arrayReverse/array-reverse.js) 
+# Reverse an Array
+<!-- Short summary or background information -->
+
+## Challenge
+<!-- Description of the challenge -->
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Solution
+<!-- Embedded whiteboard image -->
    
