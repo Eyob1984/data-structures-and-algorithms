@@ -5,9 +5,9 @@
 ## Table of Contents
 
 ### 301 Code Challanges
-Code Challanges 01
+*Code Challanges 01
 [for Each](./code-challanges/for-each/challenges-01.test.js) 
-Code Challanges 02
+*Code Challanges 02
 [value Vs reference](./code-challanges/valueVsreference/challenges-02.test.js) 
 Code Challanges 03
 [Sort](./code-challanges/sort/challenges-03.test.js) 
