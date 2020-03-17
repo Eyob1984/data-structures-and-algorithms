@@ -37,5 +37,6 @@
 
 ### 401 Code Challanges
 #### Code Challanges 01
-[arrayReverse](./code-challanges/arrayReverse/array-reverse.js)   
+[arrayReverse](./code-challanges/arrayReverse/array-reverse.js) 
+
    
