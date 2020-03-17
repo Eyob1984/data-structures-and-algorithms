@@ -36,7 +36,20 @@
 
 
 ### 401 Code Challanges
+### Reverse an Array
+
 #### Code Challanges 01
-[arrayReverse](./code-challanges/arrayReverse/array-reverse.js) 
+[arrayReverse](./code-challanges/arrayReverse/array-reverse.js)
+
+#### Challenge
+* Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+
+
+#### Approach & Efficiency
+* Since we are not using a built -in methods I create a for loop and counter which counts all the iteration of the array.
+
+
+#### Solution
+![White Board code ](./asset/image/reverseArray.jpg)
 
    
