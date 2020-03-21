@@ -1,0 +1,11 @@
+{
+  "name": "arrayshift",
+  "version": "1.0.0",
+  "description": "arrayShift",
+  "main": "array-shift.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "author": "Eyob Tamir",
+  "license": "ISC"
+}
