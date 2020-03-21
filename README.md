@@ -52,4 +52,27 @@
 #### Solution
 ![White Board code ](./asset/image/reverseArray.jpg)
 
+
+### Shift Array
+
+#### Code Challanges 02
+[arrayReverse](./code-challanges/arrayShift/array-shift.js)
+
+#### Test Link
+[arrayReverse](./code-challanges/arrayShift/_test_/array-shift.test.js)
+
+
+
+#### Challenge
+* Write a function called arrayShift that takes in an array and element and return a new array by inserting the element in the middle of the new array.
+
+
+#### Approach & Efficiency
+* Since we are not using a built -in methods I declare a variable which hold the exact half of the array index and a for loop to count the array length. 
+
+
+#### Solution
+![White Board code ](./asset/image/array-shift-white-board.jpg)
+
+
    
