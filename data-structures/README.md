@@ -20,7 +20,7 @@ LinkedList Class have the following methods:
 
     
 ## Links
-<!-- Link to pull request, passing tests, etc --> 
+[link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39)
     
 
 
