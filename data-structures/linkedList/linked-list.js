@@ -14,22 +14,18 @@ class LinkedList{
   }
 
   insert(data){
-  
     let newNode = new Node(data);
-   
     newNode.next = this.head;
     this.head = newNode;
-
   }
 
   includes(data){
     let node = this.head;
-   
     while(node){
-      if(node.data !== null){
-        node = node.next;
+      if(node.data === data){
         return true;
       }
+      node = node.next;
     }
     return false;
 
@@ -42,15 +38,18 @@ class LinkedList{
       console.log(string);
       currNode = currNode.next;
     }
-    string =+ 'null';;
+    string += 'null';
     console.log(string)
   }
 
 }
-let list1 = new LinkedList()
-list1.insert(100);
-list1.insert(200);
-list1.insert(300);
-list1.includes();
-list1.toString();
+// let list1 = new LinkedList()
+// list1.insert(100);
+// list1.insert(200);
+// list1.insert(300);
+// console.log(list1.includes(150));
+// list1.toString();
+
+module.exports = LinkedList;
+
 
