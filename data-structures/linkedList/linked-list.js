@@ -1,8 +1,8 @@
 'use strict';
 
 class Node{
-    constructor(val){
-      this.val = val;
+    constructor(data){
+      this.data = data;
       this.next = null;
       this.prev = null;
   } 
@@ -10,48 +10,47 @@ class Node{
 class LinkedList{
   constructor(){
     this.head = null;
+    this.size = 0;
   }
 
-  insert(value){
-    try{
-    let newNode = new Node(value);
-    // this.head = newNode
+  insert(data){
+  
+    let newNode = new Node(data);
+   
     newNode.next = this.head;
     this.head = newNode;
 
-    }catch(e){
-      console.error('Error at insert method')
-    }
   }
 
-  includes(val){
-    let curr = this.head;
-    while(curr){
-      console.log(curr)
-      
-      if(curr.val === val){
-         return true;
+  includes(data){
+    let node = this.head;
+   
+    while(node){
+      if(node.data !== null){
+        node = node.next;
+        return true;
       }
-      curr = curr.next
     }
     return false;
 
   }
   toString(){
-
-
+    let currNode =this.head;
+    let string = '';
+    while(currNode){
+      string += '{' + currNode.data + '} ->';
+      console.log(string);
+      currNode = currNode.next;
+    }
+    string =+ 'null';;
+    console.log(string)
   }
 
 }
-
-let node1 = new Node(5);
-let node2 = new Node(7);
-let node3 = new Node(9);
-
 let list1 = new LinkedList()
+list1.insert(100);
+list1.insert(200);
+list1.insert(300);
+list1.includes();
+list1.toString();
 
-list1.head = node1;
-node1.next = node2;
-node2.next = node3;
-console.log('list 1', list1);
-list1.includes('ABC')
