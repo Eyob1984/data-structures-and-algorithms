@@ -18,9 +18,13 @@ LinkedList Class have the following methods:
 
 *toString()* - A function that takes no arguments but prints out a visual representation of the Linked List.
 
+*insertBefore()* - A which add a new node with the given newValue immediately before the first value node
+
+*insertAfter()* - which add a new node with the given newValue immediately after the first value node
+
     
 ## Links
-[link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39)
+[PR link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39)
     
 
 
@@ -29,4 +33,8 @@ LinkedList Class have the following methods:
     
     
 ## Testing
-  `npm test linked-list.js`
+  `npm test linked-list.js` or `jest --verbose --coverage`
+
+## UML
+
+![UML](./asset/image/uml-code-challanges-06.jpg)
