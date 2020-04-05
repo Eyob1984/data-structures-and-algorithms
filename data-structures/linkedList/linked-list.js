@@ -42,39 +42,46 @@ class LinkedList{
       current.next = newNode;
     }
   }
-  insertBefore(val, newData){
-    let node = this.head;
-    // console.log('the first head', node)
-    if(!node){
-      console.log('opps');
+  insertBefore(newData, val){
+    let prevCurrNode = null;
+    let currNode = this.head;
+
+    if(currNode && currNode.data === val){
+     let newNode = new Node(newData);
+     newNode.next = this.head;
+     this.head = newNode;
+     return;
     }
-      else if(node.data === val){
-          // console.log('nodedata', node.data, 'val', val)
-          node = new Node(newData, node)
-          // console.log('inside else if', node)
-          return;
-      }
-         while (node.next ) {
-           if(node.next.data === val){
-             let newVal = new Node(newData, node.next)
-             console.log('after inst', newVal)
-             node.next = newVal;
-             console.log('inside while', newVal)
-             return
-           }
-           node = node.next;
-
-         }
-    
-    // return 'Exception';
+    while(currNode){
+        if (currNode.data === val){
+            let newNode = new Node(newData)
+            prevCurrNode.next = newNode;
+            newNode.next = currNode;
+            return;
+        }
+        prevCurrNode = currNode;
+        currNode = currNode.next
+    }
+    return false;
   }
-
+  insertAfter(newData, val){
+    let currentNode = this.head;
+    while(currentNode){
+      if(currentNode.data === val){
+        let newNode = new Node(newData);
+        let newVal = newNode.next
+        currentNode.next = newNode;
+        newNode.next = newVal;
+        return
+      }
+      currentNode = currentNode.next;
+    }
+  }
   toString(){
     let currNode =this.head;
     let string = '';
     while(currNode){
-      string += '{' + currNode.data + '} ->';
-      console.log(string);
+      string += '{' + currNode.data + '} -> ';
       currNode = currNode.next;
     }
     string += 'null';
@@ -82,16 +89,6 @@ class LinkedList{
   }
 
 }
-let list1 = new LinkedList()
-list1.insert(100);
-list1.insert(200);
-list1.insert(300);
-list1.append(400)
-list1.insert(500)
-list1.insertBefore(500, 700)
-console.log(list1.includes(150));
-list1.toString();
-
 module.exports = LinkedList;
 
 
