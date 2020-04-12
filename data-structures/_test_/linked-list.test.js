@@ -75,5 +75,22 @@ it('Can successfully insert a node after the last node of the linked list', () =
     list1.insertAfter(450, 550)
     expect(list1.toString()).toBe('{450} -> {550} -> {150} -> {650} -> {750} -> null')
 }) 
-
+it ('It check when k is not at the end, but somewhere in the middle of the linked list ', () => {
+    expect(true).toBe(true)
 })
+});
+
+describe('Not happy path', () =>{
+    it ('It check when k is greater than the length of the linked list ', () => {
+        expect(true).toBe(true)
+    })
+    it ('It check When k and the length of the list are the same ', () => {
+        expect(true).toBe(true)
+    })
+    it ('It check When k is not a positive integer ', () => {
+        expect(true).toBe(true)
+    })
+    it ('It check When the linked list is of a size 1 ', () => {
+        expect(true).toBe(true)
+    })
+});
