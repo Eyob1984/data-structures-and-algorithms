@@ -26,8 +26,8 @@ LinkedList Class have the following methods:
 
     
 ## Links
-[PR link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39)
-[PR link for Code challange -08](https://github.com/Eyob1984/data-structures-and-algorithms/pull/43)
+*[PR link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39)*
+*[PR link for Code challange -08](https://github.com/Eyob1984/data-structures-and-algorithms/pull/43)*
     
 
 
