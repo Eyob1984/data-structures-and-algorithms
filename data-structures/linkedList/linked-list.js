@@ -85,10 +85,10 @@ class LinkedList{
 
     while(currentNode){
       arr.push(currentNode.val);
-      currrentNode = currentNode.next;
+      currentNode = currentNode.next;
     }
     
-    if(K >= arr.length) return false;
+    if(k >= arr.length) return false;
     return arr [arr.length - 1 - k];
   }
 
