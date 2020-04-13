@@ -26,8 +26,8 @@ LinkedList Class have the following methods:
 
     
 ## Links
-*[PR link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39)*
-*[PR link for Code challange -08](https://github.com/Eyob1984/data-structures-and-algorithms/pull/43)*
+*[PR link for code challange -06](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39)*
+*[PR link for Code challange -07](https://github.com/Eyob1984/data-structures-and-algorithms/pull/43)*
     
 
 
@@ -40,5 +40,5 @@ LinkedList Class have the following methods:
 
 ## UML
 
-![UML for code challange - 07](./asset/image/uml-code-challanges-06.jpg)
-![UML for coee challange - 08](./asset/image/uml-code-challanges-07.jpg)
+![UML for code challange - 06](./asset/image/uml-code-challanges-06.jpg)
+![UML for coee challange - 07](./asset/image/uml-code-challanges-07.jpg)
