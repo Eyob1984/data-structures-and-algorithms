@@ -75,6 +75,10 @@
 ![White Board code ](./asset/image/array-shift-white-board.jpg)
 
 
+#### LinkedList challange 06-07
+[Readme Link](https://github.com/Eyob1984/data-structures-and-algorithms/blob/master/data-structures/README.md)
+
+
 
 
    
