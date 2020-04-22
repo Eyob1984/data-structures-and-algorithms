@@ -22,9 +22,14 @@ LinkedList Class have the following methods:
 
 *insertAfter()* - which add a new node with the given newValue immediately after the first value node
 
+*checkIndex()* - a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
+
     
 ## Links
-[PR link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/41)
+
+* [PR link for code challange -06](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39) *
+* [PR link for Code challange -07](https://github.com/Eyob1984/data-structures-and-algorithms/pull/43) *
+
     
 
 
@@ -37,4 +42,5 @@ LinkedList Class have the following methods:
 
 ## UML
 
-![UML](./asset/image/uml-code-challanges-06.jpg)
+![UML for code challange - 06](./asset/image/uml-code-challanges-06.jpg)
+![UML for coee challange - 07](./asset/image/uml-code-challanges-07.jpg)

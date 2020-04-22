@@ -77,6 +77,22 @@ class LinkedList{
       currentNode = currentNode.next;
     }
   }
+  checkIndex(k){
+    if(k < 0) return false;
+
+    let currentNode = this.head;
+    let arr = [];
+
+    while(currentNode){
+      arr.push(currentNode.val);
+      currentNode = currentNode.next;
+    }
+    
+    if(k >= arr.length) return false;
+    return arr [arr.length - 1 - k];
+  }
+
+
   toString(){
     let currNode =this.head;
     let string = '';
