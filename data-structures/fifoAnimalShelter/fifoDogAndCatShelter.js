@@ -30,7 +30,7 @@ enqueue(animal){
 
 dequeue(pref) {
 
-  if(!pref === 'dog' && !pref === 'cat'){
+  if(!pref === 'dog' && !pref === 'cat')
     return null;
 
     let currentNode = this.front;
@@ -60,9 +60,6 @@ dequeue(pref) {
         currentNode = currentNode.next;
     }
     return null;
-
-  }
-  return null;
 }
   
 toString(){
@@ -70,7 +67,7 @@ let currentNode = this.front;
 let str = '';
 
 while(currentNode){
-  str += '{ name ' + currentNode.val.name +  ', species' + currentNode.val.species + '} - > ';
+  str += '{ name 0' + currentNode.val.name +  ', species' + currentNode.val.species + '} - > ';
 
   currentNode = currentNode.next;
 }
@@ -87,10 +84,10 @@ toStringFrontRear
 
   if(this.front)
 
-    frontStr = '{ name ' + this.front.val.name +  ', species' + this.front.val.species + '} - > ';
+    frontStr = '{ name 1' + this.front.val.name +  ', species' + this.front.val.species + '} - > ';
 
     if(this.rear)
-      rearStr = '{ name ' + this.rear.val.name +  ', species' + this.rear.val.species + '} - > ';
+      rearStr = '{ name 2' + this.rear.val.name +  ', species' + this.rear.val.species + '} - > ';
 
       let str = 'front' + frontStr + 'rear' + rearStr;
 
@@ -107,3 +104,5 @@ shelter.enqueue(fido);
 
 console.log(shelter.toStringFrontRear())
 console.log(shelter.toString());
+
+module.exports = DogAndCatShelter;
