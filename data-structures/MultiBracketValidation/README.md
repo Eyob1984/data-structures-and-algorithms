@@ -1,5 +1,11 @@
 # Linked List Implementation
-The challenge was to create three classes, Node, Stack and Queue. 
+The function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+* Round Brackets : ()
+
+* Square Brackets : []
+
+* Curly Brackets : {}
 
 #### Node Class properties:
 
@@ -16,19 +22,11 @@ next - A pointer the next Node in the list
 
   * which takes any value as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance.
 
-`peek()`
 
-  * that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
 
-`isempty()`
+#### Validator function
+  * checks if the brackets are open or closed. If it is open it will push to the stack or if it is closed bracket it pop from the stack and check if it matches then return booloen.
 
-  * that takes no argument, and returns a boolean indicating whether or not the stack is empty.
-
-#### Queue Class properties
-
-`enqueue()`
-
-  * which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
 
 
 
@@ -43,4 +41,4 @@ next - A pointer the next Node in the list
   `npm test stack and queues` or `jest --verbose --coverage`
 
 ## UML
-![UML for lab-11]()
+![UML for CC-1](./asset/image/UML-CC-13.jpg)
