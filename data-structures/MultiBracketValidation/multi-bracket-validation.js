@@ -1,31 +1,62 @@
-'use strict';
-
-let isParenthesisMatching = (str) => {
-  let stack = [];
-
-  let open = {
-      '{': '}',
-      '[': ']',
-      '(': ')'
-  };
-
-  let closed = {
-      '}': true,
-      ']': true,
-      ')': true
+class Node {
+  constructor(val) {
+      this.val = val;
+      this.next = null;
   }
-
-  for (let i = 0; i < str.length; i++) {
-
-      let char = str[i];
-
-      if (open[char]) {
-          stack.push(char);
-      } else if (closed[char]) {
-          if (open[stack.pop()] !== char) return false;
-      }
-  }
-  return stack.length === 0;
 }
 
+class Stack {
+  constructor() {
+      this.top = null;
+  }
+
+  push(val) {
+      let newNode = new Node(val);
+      newNode.next = this.top;
+
+      this.top = newNode;
+  }
+
+  pop() {
+      if (!this.top) return null;
+
+      let tempNode = this.top;
+
+      this.top = tempNode.next;
+
+      tempNode.next = null;
+
+      return tempNode.val;
+  }
+
+
+}
+
+const validator = (str) => {
+  let chars = str.split('');
+  let bracketStack = new Stack();
+
+  for (let i = 0; i < chars.length; i++) {
+      if (chars[i] === '{' || chars[i] === '[' || chars[i] === '(') {
+          bracketStack.push(chars[i]);
+      } else if (chars[i] === '}' || chars[i] === ']' || chars[i] === ')') {
+          let poppedVal = bracketStack.pop();
+
+          if (chars[i] === '}' && poppedVal != '{'){
+            return false;
+          } 
+          if (chars[i] === ']' && poppedVal != '['){
+            return false;
+          } 
+          if (chars[i] === ')' && poppedVal != '(') {
+            return false;
+      }
+  }
+
+  if (bracketStack.top) return false;
+
+  return true;
+};
+
+module.exports = validator;
 
