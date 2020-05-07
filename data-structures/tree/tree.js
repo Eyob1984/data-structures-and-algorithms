@@ -13,22 +13,74 @@ class BinaryTree {
     this.root = null;
   }
 
-  preOrder(){
+  preOrder(root = this.root){
+  
+    if(!this.root) return;
 
+    let arr = [];
+    let leftArr = [];
+    let rightArr =[];
+
+    arr.push(root.val);
+
+    if(root.left){
+      leftArr = this.preOrder(root.left)
+    }
+
+    if(root.right){
+      rightArr = this.preOrder(root.right);
+    }
+    arr = [...arr, ...leftArr, ...rightArr];
+    return arr;
   }
 
-  inOrder(node){
-    this.inOrder(node.left);
-    console.log('inorder', node.data);
-    this.inOrder(node.right);
+  inOrder(root = this.root){
+  
+    if(!this.root) return;
+
+    let arr = [];
+    let leftArr = [];
+    let rightArr =[];
+
+    
+    if(root.left){
+      leftArr = this.inOrder(root.left)
+     
+    }
+    arr.push(root.val);
+
+    if(root.right){
+      rightArr = this.inOrder(root.right)
+    }
+    arr = [...leftArr, ...arr, ...rightArr];
+    return arr;
   }
 
-  postOrder(){}
+  postOrder(root = this.root){
+  
+    if(!this.root) return;
+
+    let arr = [];
+    let leftArr = [];
+    let rightArr =[];
+
+    
+    if(root.left){
+      leftArr = this.postOrder(root.left)
+    }
+    
+    if(root.right){
+      rightArr = this.postOrder(root.right);
+    }
+    arr.push(root.val);
+    arr = [...leftArr, ...rightArr, ...arr];
+    return arr;
+  }
 }
 
-class BinarySearchTree {
+class BinarySearchTree extends BinaryTree {
   constructor(){
-    this.root = null;
+    super();
 
   }
 
@@ -60,31 +112,20 @@ class BinarySearchTree {
         else{
           this.insertNode(node.right, newNode);
         }
-
     }
   }
 
 
+contains(val) {
+  let currentNode = this.root;
 
-  contains(val){
-    let newNode = new Node(val);
-    if(newNode.val === null){
-      return false;
-    }else{
-      return true;
-    }
+  while (currentNode) {
+      if (currentNode.val > val) currentNode = currentNode.left;
+      else if (currentNode.val < val) currentNode = currentNode.right;
+      else if (currentNode.val === val) return true;
   }
+
+  return false;
 }
-
-let list1 = new BinarySearchTree();
-list1.add(50);
-list1.add(40);
-list1.add(60);
-list1.add(65);
-list1.add(35)
-list1.contains()
-
-console.log('Booleon', list1.contains())
-console.log('list', list1)
-
+}
 module.exports = {Node, BinaryTree, BinarySearchTree }
