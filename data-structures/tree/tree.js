@@ -42,17 +42,17 @@ class BinaryTree {
     let leftArr = [];
     let rightArr =[];
 
+    
+    if(root.left){
+      leftArr = this.inOrder(root.left)
+     
+    }
     arr.push(root.val);
 
-    if(root.left){
-      leftArr = this.preOrder(root.left)
-    }
-
     if(root.right){
-      rightArr = this.preOrder(root.right);
+      rightArr = this.inOrder(root.right)
     }
     arr = [...leftArr, ...arr, ...rightArr];
-    console.log(arr)
     return arr;
   }
 
@@ -64,23 +64,23 @@ class BinaryTree {
     let leftArr = [];
     let rightArr =[];
 
-    arr.push(root.val);
-
+    
     if(root.left){
-      leftArr = this.preOrder(root.left)
+      leftArr = this.postOrder(root.left)
     }
-
+    
     if(root.right){
-      rightArr = this.preOrder(root.right);
+      rightArr = this.postOrder(root.right);
     }
+    arr.push(root.val);
     arr = [...leftArr, ...rightArr, ...arr];
     return arr;
   }
 }
 
-class BinarySearchTree {
+class BinarySearchTree extends BinaryTree {
   constructor(){
-    this.root = null;
+    super();
 
   }
 
@@ -112,22 +112,20 @@ class BinarySearchTree {
         else{
           this.insertNode(node.right, newNode);
         }
-
     }
   }
 
 
+contains(val) {
+  let currentNode = this.root;
 
-  contains(val){
-    let newNode = new Node(val);
-    if(newNode.val !== val )
-    
-    elseif (newNode.val !== val)
-
-    else (newNode.val === val)
-      return true;
-    
+  while (currentNode) {
+      if (currentNode.val > val) currentNode = currentNode.left;
+      else if (currentNode.val < val) currentNode = currentNode.right;
+      else if (currentNode.val === val) return true;
   }
-}
 
+  return false;
+}
+}
 module.exports = {Node, BinaryTree, BinarySearchTree }

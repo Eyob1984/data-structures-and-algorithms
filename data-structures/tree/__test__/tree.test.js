@@ -70,6 +70,9 @@ describe('Binary Tree tests', () => {
         tree.root.right = new Node('C');
         tree.root.right.right = new Node('F');
 
+        //        A
+        //    B      c
+        //  D  E        F
 
         let traversalResults = tree.inOrder();
         expect(traversalResults).toEqual(['D', 'B', 'E', 'A', 'C', 'F']);
