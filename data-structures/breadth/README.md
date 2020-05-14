@@ -36,7 +36,7 @@ Next - It indicates the next node
     
 ## Links
 
-* [PR link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/60) *
+* [Submission PR link](https://github.com/Eyob1984/data-structures-and-algorithms/pull/60) *
 
     
     
