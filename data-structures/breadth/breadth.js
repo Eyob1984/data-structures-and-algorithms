@@ -63,7 +63,11 @@ class BinaryTree {
 
             let removedItem = q.dequeue();
             printedArr.push(removedItem.val);
+            console.log('printed', printedArr)
         }
+        
+            
+
         return printedArr;
     }
 }
