@@ -21,6 +21,7 @@ left - A pointer the indicate to left
 
   *  A function that traverses the tree using postOrder depth-first traversal, and returns an array containing all the values in the traversed order
 
+`findMaximumValue()` - a method that can return the maximum numeric value stored in the tree.
 
 #### Binary Search Tree Class properties
 
@@ -42,7 +43,7 @@ left - A pointer the indicate to left
 ## Links
 
 * [PR link for lab-11](https://github.com/Eyob1984/data-structures-and-algorithms/pull/56) *
-
+* [PR link for Code challange -18]()
     
     
 ## Testing
@@ -50,3 +51,4 @@ left - A pointer the indicate to left
 
 ## UML
 ![UML for lab-11](./asset/image/uml-lab-15.jpg)
+![UML for code challange - 18](./asset/image/uml-cc-18.jpg)

@@ -21,9 +21,9 @@ class BinaryTree {
     let leftArr = [];
     let rightArr =[];
 
-    arr.push(root.val);
+    arr.push(root.val);//10
 
-    if(root.left){
+    if(root.left){//12
       leftArr = this.preOrder(root.left)
     }
 
@@ -74,8 +74,41 @@ class BinaryTree {
     }
     arr.push(root.val);
     arr = [...leftArr, ...rightArr, ...arr];
-    return arr;
+     return arr;
   }
+
+
+ findMaximumValue(root = this.root){
+  
+    if(!this.root) return;
+
+    let arr = [];
+    let leftArr = [];
+    let rightArr =[];
+
+    arr.push(root.val);//10
+
+    if(root.left){//12
+      leftArr = this.preOrder(root.left)
+    }
+
+    if(root.right){
+      rightArr = this.preOrder(root.right);
+    }
+    arr = [...arr, ...leftArr, ...rightArr];
+    
+    let holder = 0;
+    for(let i = 0; i<arr.length; i++){
+     
+      if(holder <= arr[i]){
+      holder = arr[i];
+    }
+
+    }
+    return holder;
+ 
+  }
+
 }
 
 class BinarySearchTree extends BinaryTree {
@@ -114,7 +147,6 @@ class BinarySearchTree extends BinaryTree {
         }
     }
   }
-
 
 contains(val) {
   let currentNode = this.root;
