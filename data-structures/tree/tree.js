@@ -159,5 +159,35 @@ contains(val) {
 
   return false;
 }
+
+OddBinary(root = this.root){
+let arr = [];
+let arr1 = [];
+let arr2 = [];
+if(!root){
+  return 0;
+}
+if(root % 2 !== 0){
+  arr.push(root.val);
+  console.log('arr', arr)
+}
+else{
+  return false;
+}
+
+if(root.left){
+arr1.push(this.OddBinary(root.left))
+console.log('arr1-left', arr1)
+}
+if(root.right){
+arr2 = this.OddBinary(root.right)
+console.log('arr2-right', arr2)
+}
+
+arr = [...arr, ...arr1, ...arr2];
+console.log('arrODD', arr)
+
+}
+
 }
 module.exports = {Node, BinaryTree, BinarySearchTree }
