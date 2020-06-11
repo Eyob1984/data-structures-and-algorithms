@@ -18,7 +18,8 @@
   }
   
   return arr;
-}```
+}
+```
 
 #### Trace
 
