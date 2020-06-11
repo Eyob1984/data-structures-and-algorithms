@@ -27,6 +27,6 @@ Sample Array: `[8, 4 23, 42, 16, 15]`
 
 ![Phase one](./asset/image/1st-iteration.jpg)
 
-The first step is checking by taking the first index from the array which is arr[i] means arr[0] and compaing with all the indexes in the array by grabbing them using arr[j]. In a nested loop when the outer for loop itreates ones the inner for loop itreates the whole length.
+The first step is checking by taking the first index from the array which is arr[i] means arr[0] and comparing with all the indexes in the array by grabbing them using arr[j]. In a nested loop when the outer for loop iterates ones the inner for loop iterates the whole length.
 
 
