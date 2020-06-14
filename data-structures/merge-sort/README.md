@@ -22,7 +22,7 @@
     
 ## Links
 
-* [PR link CC 22]() *
+* [PR link CC 22](https://github.com/Eyob1984/data-structures-and-algorithms/blob/merge-sort/data-structures/merge-sort/README.md) *
 
     
     
@@ -31,4 +31,6 @@
 
 ## UML
 ![UML for cc-22](./asset/image/uml-cc-22.jpg)
-  [reference](https://en.wikipedia.org/wiki/Merge_sort)
+
+
+[reference](https://en.wikipedia.org/wiki/Merge_sort)
