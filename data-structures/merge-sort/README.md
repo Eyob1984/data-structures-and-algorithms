@@ -4,10 +4,9 @@
 
     * Divide the usorted list into n sublists, each containing one element(a list of one element is considered sorted).
 
-    * REpeatedly mege sulists to product new sorted sublists until there is only one sublist remaning. This will be the sorted list.
+    * REpeatedly mege sulists to product new sorted sublists until there is only one sublist remaning. This will be the sorted list. *
     
-
-     [reference](https://en.wikipedia.org/wiki/Merge_sort)
+ 
 
 #### mergeSort function
 
@@ -32,3 +31,4 @@
 
 ## UML
 ![UML for cc-22](./asset/image/uml-cc-22.jpg)
+  [reference](https://en.wikipedia.org/wiki/Merge_sort)
