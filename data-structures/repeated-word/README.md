@@ -8,7 +8,7 @@
    
 ## Links
 
-* [PR link]() 
+* [PR link](https://github.com/Eyob1984/data-structures-and-algorithms/blob/repeated-word/data-structures/repeated-word/README.md) 
 
  
 ## Testing
