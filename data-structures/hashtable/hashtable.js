@@ -16,18 +16,14 @@ add(key,value){
   if(!this.buckets[index]){
     this.buckets[index] = [ ];
   }
-
   this.buckets[index].push([key,value])
  
-
   return index
-
 }
 get(key){
 
  let index = this.hash(key);
 
-  
   if(this.buckets[index]){
 
      for(let bucket of this.buckets[index]){
