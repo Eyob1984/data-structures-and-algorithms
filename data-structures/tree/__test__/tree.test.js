@@ -129,5 +129,28 @@ describe('Binary Search Tree tests', () => {
         expect(tree.contains(4)).toBe(true);
         expect(tree.contains(17)).toBe(false);
     });
+    it('Find the max number', () => {
+        let tree = new BT();
+        console.log('are you here?')
+        tree.root = new Node(15);
+        tree.root.left = new Node(8);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(12);
+        tree.root.right = new Node(20);
+        tree.root.right.right = new Node(22);
+        expect(tree.findMaximumValue()).toBe(22)
+});
+    it('Find the odd numbers', () => {
+        let tree = new BST();
+        console.log('are you here?')
+        tree.root = new Node(15);
+        tree.root.left = new Node(8);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(12);
+        tree.root.right = new Node(20);
+        tree.root.right.right = new Node(22);
+        expect(tree.OddBinary()).toBe([15, 22])
+});
+    
 });
 

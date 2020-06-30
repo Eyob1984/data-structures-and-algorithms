@@ -24,23 +24,27 @@ LinkedList Class have the following methods:
 
 *checkIndex()* - a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
 
+
     
 ## Links
 
 * [PR link for code challange -06](https://github.com/Eyob1984/data-structures-and-algorithms/pull/39) *
 * [PR link for Code challange -07](https://github.com/Eyob1984/data-structures-and-algorithms/pull/43) *
 
+
     
 
-
-## Approach & Efficiency
 
     
     
 ## Testing
   `npm test linked-list.js` or `jest --verbose --coverage`
+  
 
 ## UML
 
 ![UML for code challange - 06](./asset/image/uml-code-challanges-06.jpg)
+
 ![UML for coee challange - 07](./asset/image/uml-code-challanges-07.jpg)
+
+

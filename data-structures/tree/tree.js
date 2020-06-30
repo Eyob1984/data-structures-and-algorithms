@@ -21,9 +21,9 @@ class BinaryTree {
     let leftArr = [];
     let rightArr =[];
 
-    arr.push(root.val);
+    arr.push(root.val);//10
 
-    if(root.left){
+    if(root.left){//12
       leftArr = this.preOrder(root.left)
     }
 
@@ -74,8 +74,41 @@ class BinaryTree {
     }
     arr.push(root.val);
     arr = [...leftArr, ...rightArr, ...arr];
-    return arr;
+     return arr;
   }
+
+
+ findMaximumValue(root = this.root){
+  
+    if(!this.root) return;
+
+    let arr = [];
+    let leftArr = [];
+    let rightArr =[];
+
+    arr.push(root.val);//10
+
+    if(root.left){//12
+      leftArr = this.preOrder(root.left)
+    }
+
+    if(root.right){
+      rightArr = this.preOrder(root.right);
+    }
+    arr = [...arr, ...leftArr, ...rightArr];
+    
+    let holder = 0;
+    for(let i = 0; i<arr.length; i++){
+     
+      if(holder <= arr[i]){
+      holder = arr[i];
+    }
+
+    }
+    return holder;
+ 
+  }
+
 }
 
 class BinarySearchTree extends BinaryTree {
@@ -115,7 +148,6 @@ class BinarySearchTree extends BinaryTree {
     }
   }
 
-
 contains(val) {
   let currentNode = this.root;
 
@@ -127,5 +159,35 @@ contains(val) {
 
   return false;
 }
+
+OddBinary(root = this.root){
+let arr = [];
+let arr1 = [];
+let arr2 = [];
+if(!root){
+  return 0;
+}
+if(root % 2 !== 0){
+  arr.push(root.val);
+  console.log('arr', arr)
+}
+else{
+  return false;
+}
+
+if(root.left){
+arr1.push(this.OddBinary(root.left))
+console.log('arr1-left', arr1)
+}
+if(root.right){
+arr2 = this.OddBinary(root.right)
+console.log('arr2-right', arr2)
+}
+
+arr = [...arr, ...arr1, ...arr2];
+console.log('arrODD', arr)
+
+}
+
 }
 module.exports = {Node, BinaryTree, BinarySearchTree }
