@@ -6,14 +6,16 @@ const repeatedWords = require('../repeated-word.js');
 describe(" Find repeated words", () => {
   it("returns empty array if the string is empty", () => {
     const testString = "";
-    expect(repeatedWords(testString)).toEqual('There are no duplicated words!');
+
+    expect(repeatedWords(testString)).toEqual('no duplicated words!');
   });
-  it("can find repeated words in a string and return an array", () => {
+  it("can find repeated words in a string ", () => {
     const testString =
-      "Hi I am Thomas, nice to meet you ! How are you ? I am fine";
-    expect(repeatedWords(testString)).toEqual("i");
+      "What is your name? my name is karen";
+    expect(repeatedWords(testString)).toEqual("is");
   });
-  it("returns undefined if there are no repeating words", () => {
+  it("returns a coded string if there are no repeating words", () => {
+
     const testString = "Hello, how are you?";
     expect(repeatedWords(testString)).toEqual('There are no duplicated words!');
   });
