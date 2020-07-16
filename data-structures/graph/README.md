@@ -52,7 +52,7 @@ next - A pointer the next Node in the list
     
     
 ## Testing
-  `npm test stack and queues` or `jest --verbose --coverage`
+  `npm test graph` or `jest --verbose --coverage`
 
 ## UML
 ![UML for lab-30]()
