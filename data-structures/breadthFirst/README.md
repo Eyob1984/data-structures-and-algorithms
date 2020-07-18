@@ -18,31 +18,15 @@ next - A pointer the next Node in the list
 
   * Returns the added node
 
-`addEdge()`
-
-  * Adds a new edge between two nodes in the graph
-
-  * Include the ability to have a “weight”
-
-  * Takes in the two nodes to be connected by the edge
-
-    *Both nodes should already be in the Graph
-
 `getNode()`
 
   * Returns all of the nodes in the graph as a collection (set, list, or similar)
 
-`getNeighbors()`
+ `breadth-first()`
 
-  * Returns a collection of edges connected to the given node
+  * return a collection of nodes in the order they were visited. 
 
-  * Takes in a given node
 
-  * Include the weight of the connection in the returned collection 
-
-`size()`
-
-  * Returns the total number of nodes in the graph
 
     
 ## Links
