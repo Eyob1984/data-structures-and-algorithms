@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1585099236648" clover="3.2.0">
-  <project timestamp="1585099236648" name="All files">
-    <metrics statements="13" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1" elements="20" coveredelements="14" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="array-binary-search.js" path="/mnt/c/users/tamir/codefellows/data-structures-and-algorithms/code-challanges/arrayBinarySearch/array-binary-search.js">
-      <metrics statements="13" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="17" count="0" type="stmt"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="25" count="1" type="stmt"/>
+<coverage generated="1595035410417" clover="3.2.0">
+  <project timestamp="1595035410417" name="All files">
+    <metrics statements="18" coveredstatements="16" conditionals="6" coveredconditionals="4" methods="5" coveredmethods="5" elements="29" coveredelements="25" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
+    <file name="breadth-first.js" path="/mnt/c/Users/tamir/codefellows/data-structures-and-algorithms/data-structures/breadthFirst/breadth-first.js">
+      <metrics statements="18" coveredstatements="16" conditionals="6" coveredconditionals="4" methods="5" coveredmethods="5"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="5" count="8" type="stmt"/>
+      <line num="13" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="4" type="stmt"/>
+      <line num="25" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
